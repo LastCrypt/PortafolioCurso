@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header{
+    background: url("images/bg-pattern-intro.svg") no-repeat left center/150%, linear-gradient(to left, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
+    position: relative;
+    width: calc(100% - 200);
+    min-height: 400px;
+    border-bottom-left-radius: 50px; 
+    padding: 40px 100px 40px 100px;
+    color: white;
+}
+
+.clearfix{
+    clear: both;
+}
+
+header nav{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+}
+
+#options1{
+    width: 50%;
+}
+
+#options1 h2{
+    float: left;
+    width: 130px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav a{
+    color: black;
+}
+
+.nav > li{
+    float: left;
+    min-width: 100px;
+    cursor: pointer;
+    padding: 4px 0px 20px 0px;
+}
+
+.nav li ul {
+    background-color: white;
+    margin-top: 20px;
+    font-size: 12px;
+    padding: 15px;
+    border-radius: 5px;
+    position: absolute;
+    min-width: 90px;
+    transition: all 0.3s ease-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.nav li ul li{
+    padding: 5px 0px;
+}
+
+.nav li {
+    display: block;
+    transition: 0.75s;
+}
+
+.nav > li:hover{
+    text-decoration: underline;
+}
+
+.nav li:hover > ul{
+    visibility: visible;
+    opacity: 1;
+}
+
+.nav li:hover > a{
+    font-weight: bold;
+}
+
+.nav li:hover > img{
+    transform: rotate(-180deg);
+}
+
+.nav li img{
+    height: 10px;
+    margin: 1px;
+    transition: 0.5s;
+    filter: brightness(200%);
+}
+
+#options2 li{
+    float: left;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+#contentNav{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contentNav h1{
+    margin-top: 100px;
+    font-size: 50px;
+    width: 100%;
+}
+
+#contentNav ul li{
+    float: left;
+    width: 150px;
+    text-align: right;
+    list-style: none;
+    margin: 5px;
+}
+
+#contentNav ul{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px;
+}
+
+#contentNav p{
+    width: 100%;
+    font-size: 18px;
+    margin: 20px;
+}
+
+.bottomW {
+    background-color: white;
+    font-weight: bold;
+    border-radius: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottomW a{
+    color: hsl(353, 100%, 62%) ;
+}
+
+.bottomW:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.bottomW:hover > a {
+    color: white;
+}
+
+.bottomB2 {
+    border: white solid 1px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottomB2:hover {
+    background-color: white;
+}
+
+.bottomB2:hover > a{
+    color: hsl(353, 100%, 62%) ;
+    font-weight: bold;
+}
+
+#content1 {
+    width: 100%;
+    position: relative;
+    margin: 40px 0px;
+    font-family: 'Overpass', sans-serif;
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    color: hsl(208, 49%, 24%);
+    font-size: 25px;
+}
+
+#content1Body{
+    display: flex;
+    margin: -300px 0px 0px 0px;
+    overflow: hidden;
+}
+
+#photo1{
+    width: calc(50% - 90px);
+    padding-left: 90px;
+}
+
+.informationLight{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    padding-top: 250px;
+}
+
+.informationLight h6{
+    color: hsl(208, 49%, 24%);
+    font-size: 20px;
+    margin: 30px 130px;
+}
+
+.informationLight p{
+    color: hsl(207, 13%, 34%);
+    font-size: 15px;
+    margin: 0px 100px 30px 130px;
+}
+
+.informationLight h6:first-child{
+    margin: 0px 100px 30px 130px;
+}
+
+#content2 {
+    width: 100%;
+    height: 530px;
+    position: relative;
+    margin: 40px 0px;
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+#fondo{
+    width: 100%;
+    height: 400px;
+    background: url("images/bg-pattern-circles.svg") no-repeat left bottom/60%, linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+#fondo img{
+    margin: 0px 50px;
+}
+
+#informationDark{
+    width: 50%;
+    color: white;
+}
+
+#informationDark h6{
+    font-size: 30px;
+    margin-right: 200px;
+}
+
+#informationDark p{
+    font-size: 15px;
+    margin-right: 200px;
+}
+
+#content3 {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-family: 'Overpass', sans-serif;
+}
+
+#photo2 {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: right;
+    overflow: hidden;
+}
+
+#photo2 img{
+    padding-right: 60px;
+}
+
+#content3 .informationLight{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    padding: 0px;
+}
+
+#content3 .informationLight h6{
+    color: hsl(208, 49%, 24%);
+    font-size: 20px;
+    margin: 30px 0px;
+}
+
+#content3 .informationLight p{
+    color: hsl(207, 13%, 34%);
+    font-size: 15px;
+    margin: 0px 150px 30px 0px;
+}
+
+#content3 .informationLight h6:first-child{
+    margin: 0px 100px 30px 0px;
+}
+
+footer {
+    background-color: hsl(240, 10%, 16%);
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    padding-top: 30px;
+    color: white;
+    border-top-right-radius: 100px;
+}
+
+footer h2{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+#list{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20%;
+    position: relative;
+}
+
+#list > li{
+    float: left;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+#list li ul{
+    margin-top: 20px;
+}
+
+#list li ul li{
+    width: 200px;
+    height: 30px;
+}
+
+#list a{
+    color: hsl(240, 2%, 79%);
+}
+
+#list a:hover{
+    text-decoration: underline;
+}
+
+.attribution{
+    background-color: hsl(240, 10%, 16%);
+    border-top: hsl(240, 2%, 79%) solid;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(240, 2%, 79%);
+}
+
+.attribution a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 3px;
+}
