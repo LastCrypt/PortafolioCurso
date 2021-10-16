@@ -18,74 +18,87 @@
 <body>
   <div id="container">
     <header>
-      <nav>
+      <nav id="subNavPri">
         <div id="options1">
           <h2>
             Blogr
           </h2>
-          <ul class="nav">
-            <li>
-              product
-              <img src="CSS/images/icon-arrow-dark.svg" alt="flecha">
-              <ul>
-                <li>
-                  <a href="reto1.html">Overview</a>
-                </li>
-                <li>
-                  <a href="reto1.html">Pricing</a>
-                </li>
-                <li>
-                  <a href="reto1.html">Marketplace</a>
-                </li>
-                <li>
-                  <a href="reto1.html">Features</a>
-                </li>
-                <li>
-                  <a href="reto1.html">Integrations</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              Company
-              <img src="CSS/images/icon-arrow-dark.svg" alt="flecha">
-              <ul>
-                <li>
-                  <a href="reto1.html">About</a>
-                </li>
-                <li>
-                  <a href="reto1.html">Team</a>
-                </li>
-                <li>
-                  <a href="reto1.html">Blog</a>
-                </li>
-                <li>
-                  <a href="reto1.html">Careers</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              Connect
-              <img src="CSS/images/icon-arrow-dark.svg" alt="flecha">
-              <ul>
-                <li>
-                  <a href="reto1.html">Contact</a>
-                </li>
-                <li>
-                  <a href="reto1.html">Newsletter</a>
-                </li>
-                <li>
-                  <a href="reto1.html">LinkedIn</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+          <div id="btnBurger">
+            <img src="CSS/images/icon-hamburger.svg" alt="burger">
+          </div>
+          <div id="subMenu">
+            <ul class="nav">
+              <li class="subMenu1">
+                Product
+                <img src="CSS/images/icon-arrow-dark.svg" alt="flecha">
+                <ul>
+                  <li>
+                    <a href="reto1.html">Overview</a>
+                  </li>
+                  <li>
+                    <a href="reto1.html">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="reto1.html">Marketplace</a>
+                  </li>
+                  <li>
+                    <a href="reto1.html">Features</a>
+                  </li>
+                  <li>
+                    <a href="reto1.html">Integrations</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="subMenu1">
+                Company
+                <img src="CSS/images/icon-arrow-dark.svg" alt="flecha">
+                <ul>
+                  <li>
+                    <a href="reto1.html">About</a>
+                  </li>
+                  <li>
+                    <a href="reto1.html">Team</a>
+                  </li>
+                  <li>
+                    <a href="reto1.html">Blog</a>
+                  </li>
+                  <li>
+                    <a href="reto1.html">Careers</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="subMenu1">
+                Connect
+                <img src="CSS/images/icon-arrow-dark.svg" alt="flecha">
+                <ul>
+                  <li>
+                    <a href="reto1.html">Contact</a>
+                  </li>
+                  <li>
+                    <a href="reto1.html">Newsletter</a>
+                  </li>
+                  <li>
+                    <a href="reto1.html">LinkedIn</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="options2">
+              <li class="bottomB">
+                <a href="reto1.html">Login</a>
+              </li>
+              <li class="bottomW">
+                <a href="reto1.html">Sign Up</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <ul id="options2">
+        <ul class="options2">
           <li class="bottomB">
-            <a href="reto1.html">login</a>
+            <a href="#">login</a>
           </li>
           <li class="bottomW">
-            <a href="reto1.html">Sign Up</a>
+            <a href="#">Sign Up</a>
           </li>
         </ul>
       </nav>
@@ -98,10 +111,10 @@
         </p>
         <ul>
           <li class="bottomW">
-            <a href="reto1.html">Star for Free</a>
+            <a href="#">Star for Free</a>
           </li>
           <li class="bottomB2">
-            <a href="reto1.html">Learn More </a>
+            <a href="#">Learn More </a>
           </li>
         </ul>
       </section>
@@ -111,6 +124,9 @@
         <h2>
           Designed for the future
         </h2>
+      </div>
+      <div class="photo1">
+        <img src="CSS/images/illustration-editor-mobile.svg" alt="imagen1">
       </div>
       <div id="content1Body">
         <div class="informationLight">
@@ -131,7 +147,7 @@
             by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
           </p>
         </div>
-        <div id="photo1">
+        <div class="photo1">
           <img src="CSS/images/illustration-editor-desktop.svg" alt="imagen1">
         </div>
       </div>
@@ -153,6 +169,9 @@
     <section id="content3">
       <div id="photo2">
         <img src="CSS\images\illustration-laptop-desktop.svg" alt="imagen1">
+      </div>
+      <div id="photo2B">
+        <img src="CSS\images\illustration-laptop-mobile.svg" alt="imagen1">
       </div>
       <div class="informationLight">
         <h6>
@@ -235,5 +254,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Kevin David Bedoya Garcia</a>.
   </div>
+  <script src="menu.js"></script>
 </body>
 </html>
