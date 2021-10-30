@@ -1,0 +1,298 @@
+.ficha {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-areas:
+    "encabezado-ficha"
+    "actividades-ficha"
+    "estados-ficha";
+  width: 100%;
+}
+
+img {
+  width: calc(100% - 10px);
+  border-radius: 100%;
+  border: #cb3b0e solid 5px;
+}
+
+.encabezado-ficha {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "nombre-estudiante nombre-estudiante fotografia"
+    "enlaces enlaces fotografia";
+  grid-area: encabezado-ficha;
+  margin: 15px;
+  background-color: #8a2100;
+  border-radius: 15px;
+}
+
+.nombre-estudiante {
+  display: flex;
+  grid-area: nombre-estudiante;
+  background-color: #cb3b0e;
+  margin: 10px;
+  border-radius: 15px;
+  padding: 15px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.nombre-estudiante h2 {
+  text-align: center;
+  color: white;
+}
+
+.enlaces {
+  grid-area: enlaces;
+  display: flex;
+  background-color: #cb3b0e;
+  margin: 10px;
+  padding: 15px 0;
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.enlaces a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fotografia {
+  grid-area: fotografia;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.actividades-ficha {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "titulo-actividades"
+    "encabezado-actividades"
+    "estado-actividades";
+  grid-area: actividades-ficha;
+  background-color: #8a2100;
+  margin: 15px;
+  border-radius: 15px;
+  color: white;
+}
+
+.titulo-actividades {
+  grid-area: titulo-actividades;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin: 10px;
+  background-color: #cb3b0e;
+  border-radius: 15px;
+}
+
+.encabezado-actividades {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "item nombre estadouiux estadodev";
+  grid-area: encabezado-actividades;
+  background-color: #cb3b0e;
+  margin: 0 10px;
+  padding: 0 5px;
+  border-radius: 15px 15px 0 0;
+}
+
+.encabezado-actividades p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  border-bottom: #8a2100 solid 1px;
+}
+
+.item {
+  grid-area: item;
+}
+
+.nombre {
+  grid-area: nombre;
+}
+
+.estadouiux {
+  grid-area: estadouiux;
+}
+
+.estadodev {
+  grid-area: estadodev;
+}
+
+.estado-actividades {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "nro enlace porcentajeuiux porcentajedev";
+  grid-area: estado-actividades;
+  background-color: #cb3b0e;
+  margin: 0 10px 10px 10px;
+  border-radius: 0 0 15px 15px;
+}
+
+.nro {
+  grid-area: nro;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nro p,
+.porcentajedev p,
+.porcentajeuiux p {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.nro p,
+.enlace a,
+.porcentajeuiux p {
+  border-right: #8a2100 solid 1px;
+}
+
+.nro,
+.enlace,
+.porcentajeuiux,
+.porcentajedev {
+  margin: 15px 0;
+}
+
+.enlace {
+  grid-area: enlace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.enlace a {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.porcentajeuiux {
+  grid-area: porcentajeuiux;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.porcentajedev {
+  grid-area: porcentajedev;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.estados-ficha {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "estadohtml estadocss estadojs estadoui estadoux total";
+  grid-area: estados-ficha;
+  height: 60px;
+  background-color: #8a2100;
+  margin: 15px;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.estadohtml {
+  grid-area: estadohtml;
+}
+
+.estadocss {
+  grid-area: estadocss;
+}
+
+.estadojs {
+  grid-area: estadojs;
+}
+
+.estadoui {
+  grid-area: estadoui;
+}
+
+.estadoux {
+  grid-area: estadoux;
+}
+
+.total {
+  grid-area: total;
+}
+
+.estadohtml,
+.estadocss,
+.estadojs,
+.estadoui,
+.estadoux,
+.total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cb3b0e;
+  margin: 0 5px;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 13px;
+  padding: 0 1px;
+  color: white;
+}
+
+.textSmall{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    float: none;
+    width: calc((100% / 3) - 20px);
+    margin: 5px 10px;
+  }
+
+  .textBig {
+    display: none;
+  }
+
+  .textSmall {
+    display: inline;
+  }
+}
