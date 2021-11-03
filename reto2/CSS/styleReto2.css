@@ -1,3 +1,7 @@
+#content{
+  flex-wrap: wrap;
+}
+
 .ficha {
   display: grid;
   grid-template-columns: 1fr;
