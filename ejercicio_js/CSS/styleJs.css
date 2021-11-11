@@ -1,0 +1,24 @@
+#content{
+    flex-direction: column;
+    padding: 30px;
+    color: white;
+}
+
+.codes{
+    margin: 15px 0px;
+    background-color: #CB3B0E;
+    padding: 30px;
+    width: calc(100% - 60px);
+    border-radius: 15px;
+}
+
+.codes h2{
+    margin-bottom: 15px;
+}
+
+.bodyCode{
+    background-color: #8A2100;
+    padding: 15px;
+    margin: 15px 0;
+    overflow: auto;
+}
